@@ -1,5 +1,8 @@
 # MyGram Project
 
+## Nama     : Muhamad Nahrowi 
+## Tugas    : DTS Kominfo Hacktiv8
+
 MyGram adalah sebuah aplikasi yang memungkinkan pengguna untuk menyimpan dan berbagi foto serta membuat komentar pada foto orang lain. Proyek ini dilengkapi dengan proses CRUD (Create, Read, Update, Delete) menggunakan tabel dan alur yang dijelaskan di bawah ini:
 
 ## Framework dan Library
