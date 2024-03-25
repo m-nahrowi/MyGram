@@ -83,3 +83,21 @@ func (u *UserService) Deleteuser(id interface{}) (string, error) {
 
 	return "Your account has successfully deleted", nil
 }
+
+// func (u *UserService) GetAllUsers() ([]models.User, error) {
+//     // Ubah panggilan ke GetAllUsers sesuai dengan perubahan
+//     users, err := u.userQuery.GetAllUsers()
+//     if err != nil {
+//         return nil, err
+//     }
+//     return users, nil
+// }
+
+// func (u *UserService) GetAllUsers() ([]models.User, error) {
+// 	users, err := u.userQuery.GetAllUsers()
+// 	if err != nil {
+// 		return nil, err
+// 	}
+// 	return users, nil
+// }
+

@@ -66,6 +66,10 @@ func (u *UserController) LoginUser(c *gin.Context) {
 	helpers.UserLoginSuccess(c, token)
 }
 
+
+
+
+
 func (u *UserController) UpdateUser(c *gin.Context) {
 	user := models.User{}
 
@@ -94,6 +98,7 @@ func (u *UserController) UpdateUser(c *gin.Context) {
 }
 
 func (u *UserController) DeleteUser(c *gin.Context) {
+	
 	id, _ := c.Get("id")
 	fmt.Println(id)
 
@@ -105,3 +110,18 @@ func (u *UserController) DeleteUser(c *gin.Context) {
 
 	helpers.UserDeleteSuccess(c, resp)
 }
+
+
+
+
+
+
+// func (u *UserController) GetAllUsers(c *gin.Context) {
+// 	users, err := u.userService.GetAllUsers()
+// 	if err != nil {
+// 		helpers.BadRequest(c, err)
+// 		return
+// 	}
+// 	helpers.UserGetSuccess(c, users)
+// }
+

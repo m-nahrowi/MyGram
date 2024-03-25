@@ -62,6 +62,17 @@ func UserDeleteSuccess(c *gin.Context, msg string) {
 	})
 }
 
+// func UserGetSuccess(c *gin.Context, users []models.User) {
+//     // c.JSON(http.StatusOK, gin.H{
+//     //     "users": users,
+//     // })
+
+// 	c.JSON(200, gin.H{
+// 		"users": users,
+// 	})
+// }
+
+
 // PHOTO
 func PhotoCreateSuccess(c *gin.Context, data models.Photo) {
 	c.JSON(201, gin.H{

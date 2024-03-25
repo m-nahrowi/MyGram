@@ -31,8 +31,12 @@ func StartService(db *gorm.DB) *gin.Engine {
 
 	route.POST("/user/register", userController.CreateUser)
 	route.POST("/user/login", userController.LoginUser)
-	route.PUT("/user", middleware.Auth(), userController.UpdateUser)
-	route.DELETE("/user", middleware.Auth(), userController.DeleteUser)
+	// get
+	// route.GET("/users", middleware.Auth(), userController.GetAllUsers)
+	// route.GET("/user", middleware.Auth(), userController.GetUserById)
+	//
+	route.PUT("/user/:id", middleware.Auth(), userController.UpdateUser)
+	route.DELETE("/user/:id", middleware.Auth(), userController.DeleteUser)
 
 	route.POST("/photo", middleware.Auth(), photoController.CreatePhoto)
 	route.GET("/photo", middleware.Auth(), photoController.GetPhotos)

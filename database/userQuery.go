@@ -27,3 +27,23 @@ func (u *DB) DeleteUser(id interface{}) error {
 	err := u.db.Delete(&models.User{}, id).Error
 	return err
 }
+
+
+// test
+func (u *DB) GetAllUsers() ([]models.User, error) {
+    var users []models.User
+    if err := u.db.Find(&users).Error; err != nil {
+        return nil, err
+    }
+    return users, nil
+}
+
+
+
+// func (u *UserQuery) GetAllUsers() ([]models.User, error) {
+//     var users []models.User
+//     if err := u..Find(&users).Error; err != nil {
+//         return nil, err
+//     }
+//     return users, nil
+// }
